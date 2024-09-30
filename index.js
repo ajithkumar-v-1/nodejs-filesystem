@@ -2,12 +2,15 @@ import express from "express";
 import fs from "fs";
 import { format } from "date-fns";
 import path from "path";
-import dotenv from "dotenv";
+
+
+
 //importing space
 
 //initalization
 const app = express();
-const PORT = process.env.PORT ||5555 ;
+const PORT = 4000 ;
+
 
 //middlewares
 app.use(express)
@@ -53,3 +56,4 @@ app.get("/read", (req, res) => {
 app.listen(PORT, () => {
   console.log(`App is listening to the port ${PORT}`);
 });
+
