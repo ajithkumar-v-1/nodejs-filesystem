@@ -7,7 +7,7 @@ import dotenv from "dotenv";
 
 //initalization
 const app = express();
-const PORT = process.env.PORT ||5555  ;
+const PORT = process.env.PORT ||10000 ;
 
 //middlewares
 app.use(express)
