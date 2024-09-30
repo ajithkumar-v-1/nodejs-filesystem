@@ -2,11 +2,12 @@ import express from "express";
 import fs from "fs";
 import { format } from "date-fns";
 import path from "path";
+import dotenv from "dotenv";
 //importing space
 
 //initalization
 const app = express();
-const PORT = 5555;
+const PORT = process.env.PORT ||5555  ;
 
 //middlewares
 app.use(express)
